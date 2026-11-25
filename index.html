@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paint It Forward</title>
+<meta name="description" content="Paint It Forward is a youth-led nonprofit that turns community art into school and art supplies for students with special needs.">
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<!--
+  Concept v0.1 for Emily's review. Copy provenance is marked with data-copy:
+  "source"   = existing wording/facts from paintitforward.co (checked 24 Nov 2026),
+  "proposed" = new draft copy for review. Editorial notes live in CONCEPT_NOTES.md, not on these pages.
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="5"/>
+    </filter>
+    <symbol id="brushring" viewBox="0 0 200 200">
+      <g fill="none" stroke="currentColor" stroke-linecap="round" filter="url(#rough)">
+        <path d="M60 31 A80 80 0 1 0 128 25" stroke-width="13"/>
+        <path d="M128 25 C112 18 100 15 92 16" stroke-width="9"/>
+        <path d="M72 186 Q100 194 128 186" stroke-width="11"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#home"><img src="assets/logo.jpg" width="1800" height="1790" alt=""><span>Paint It Forward</span></a>
+    <button class="button button--secondary menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+    <nav class="navlinks" id="navigation" aria-label="Main">
+      <a href="#impact">Our impact</a>
+      <a href="#chapters" data-nav="chapters">Chapters</a>
+      <a href="#artwork" data-nav="artwork">Artwork</a>
+      <a href="#get-involved" data-nav="get-involved">Get involved</a>
+      <a class="button" href="#chapter-directory">Find your chapter</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- ============ HOME ============ -->
+<div data-view="home">
+  <section class="hero container" aria-labelledby="home-title">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow" data-copy="source">Youth-led · 501(c)(3) nonprofit</p>
+        <h1 id="home-title" data-copy="proposed">A little art.<span>A lasting difference.</span></h1>
+        <p class="lead" data-copy="proposed">Bring your creativity to a community that makes art, builds connections and supports special education.</p>
+        <div class="actions">
+          <a class="button" href="#chapter-directory">Find your chapter</a>
+          <a class="button button--secondary" href="https://www.paintitforward.co/category/all-products" target="_blank" rel="noopener noreferrer">Explore the artwork</a>
+        </div>
+      </div>
+      <figure class="collage">
+        <svg class="blob" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M8 12C20 2 70 0 90 8c9 4 10 32 7 54-2 22-5 35-27 36-25 2-55 1-64-10C0 78 2 25 8 12Z"/></svg>
+        <span class="dab dab--pink" aria-hidden="true"></span>
+        <span class="dab dab--orange" aria-hidden="true"></span>
+        <img src="assets/art-community.jpg" width="1800" height="1350" alt="A group displaying colourful paintings together" fetchpriority="high">
+        <svg class="ring" style="color:var(--color-green)" viewBox="0 0 200 200" aria-hidden="true"><use href="#brushring"/></svg>
+        <figcaption data-copy="proposed">Paintings made together, shared with pride.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="soft" aria-labelledby="how-title">
+    <div class="container">
+      <div class="sectionhead">
+        <div><p class="eyebrow">How it works</p><h2 id="how-title" data-copy="proposed">Art that keeps on giving.</h2></div>
+        <p data-copy="source">Paint It Forward is devoted to enriching lives through art, so no kid has unequal opportunities.</p>
+      </div>
+      <div class="flow">
+        <article><span class="pot" aria-hidden="true"></span><h3 data-copy="proposed">Paint together</h3><p data-copy="source">Volunteers and artists create paintings at relaxed community art sessions.</p></article>
+        <article><span class="pot" aria-hidden="true"></span><h3 data-copy="proposed">Share the work</h3><p data-copy="source">The finished art is sold through our online shop and at in-person events and exhibitions.</p></article>
+        <article><span class="pot" aria-hidden="true"></span><h3 data-copy="proposed">Fund the classroom</h3><p data-copy="source">Proceeds buy school and art supplies for students in special education.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="navy" id="impact" aria-labelledby="impact-title">
+    <div class="container impact-grid">
+      <figure class="impact-photo">
+        <img src="assets/community.jpg" width="1400" height="933" loading="lazy" alt="Community members gathered together outdoors">
+        <figcaption data-copy="proposed">A community gathering.</figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow">Our impact</p>
+        <h2 id="impact-title" data-copy="proposed">Creativity with purpose.</h2>
+        <p data-copy="proposed">Art made by volunteers becomes school and art supplies for students who need them.</p>
+        <dl class="facts">
+          <div><dt>3</dt><dd><strong>Chapters in focus</strong><span data-copy="proposed">Nigeria, Kenya and Singapore, each growing in its own way.</span></dd></div>
+          <div><dt>13+</dt><dd><strong>Open to young people</strong><span data-copy="source">Volunteers and leaders can get involved from age 13.</span></dd></div>
+          <div><dt>Art</dt><dd><strong>Turned into supplies</strong><span data-copy="source">Sales fund school and art supplies for students with special needs.</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" aria-labelledby="ch-preview-title">
+    <div class="sectionhead">
+      <div><p class="eyebrow">Chapters</p><h2 id="ch-preview-title" data-copy="proposed">Local stories.<br>A shared identity.</h2></div>
+      <p data-copy="proposed">Young people are bringing Paint It Forward to their own communities. Say hello to a chapter near you.</p>
+    </div>
+    <div class="chapters">
+      <article class="card chapter chapter--ng"><span class="corner" aria-hidden="true"></span><span class="badge">Chapter</span><h3>Nigeria</h3><p data-copy="proposed">Part of the Paint It Forward chapter network. Local details and joining information are coming soon.</p><a class="go" href="mailto:paintitforwardofficial@gmail.com?subject=Nigeria%20chapter%20enquiry">Ask about this chapter</a></article>
+      <article class="card chapter chapter--ke"><span class="corner" aria-hidden="true"></span><span class="badge">Chapter</span><h3>Kenya</h3><p data-copy="proposed">A community connected through art. Chapter introductions and local updates are coming soon.</p><a class="go" href="mailto:paintitforwardofficial@gmail.com?subject=Kenya%20chapter%20enquiry">Ask about this chapter</a></article>
+      <article class="card chapter chapter--sg"><span class="corner" aria-hidden="true"></span><span class="badge badge--planning">First event in planning</span><h3>Singapore</h3><p data-copy="proposed">A new chapter planning its first art event. Follow along as the plans take shape.</p><a class="go" href="https://www.instagram.com/paintitforwardsingapore/" target="_blank" rel="noopener noreferrer">Follow Singapore on Instagram</a></article>
+    </div>
+    <p class="more"><a href="#chapters">See all chapters and how to start one</a></p>
+  </section>
+
+  <section class="soft" id="artwork" aria-labelledby="art-title">
+    <div class="container artwall">
+      <ul class="salon" aria-label="A few paintings in the shop">
+        <li class="f1"><a href="https://www.paintitforward.co/product-page/rainbow-painting" target="_blank" rel="noopener noreferrer"><b>Rainbow Painting</b><span>View in shop</span></a></li>
+        <li class="f2"><a href="https://www.paintitforward.co/product-page/autumn-tree-painting" target="_blank" rel="noopener noreferrer"><b>Autumn Tree Painting</b><span>View in shop</span></a></li>
+        <li class="f3"><a href="https://www.paintitforward.co/product-page/beach-shore-painting" target="_blank" rel="noopener noreferrer"><b>Beach Shore Painting</b><span>View in shop</span></a></li>
+        <li class="f4"><a href="https://www.paintitforward.co/product-page/orange-cactus-painting" target="_blank" rel="noopener noreferrer"><b>Orange Cactus Painting</b><span>View in shop</span></a></li>
+        <li class="f5"><a href="https://www.paintitforward.co/product-page/pink-mountain-painting" target="_blank" rel="noopener noreferrer"><b>Pink Mountain Painting</b><span>View in shop</span></a></li>
+        <li class="f6"><a href="https://www.paintitforward.co/product-page/tree-swan-painting" target="_blank" rel="noopener noreferrer"><b>Tree Swan Painting</b><span>View in shop</span></a></li>
+      </ul>
+      <div>
+        <p class="eyebrow">Artwork</p>
+        <h2 id="art-title" data-copy="proposed">Give the work centre stage.</h2>
+        <p class="lead" data-copy="source">Paintings by our volunteer artists are for sale in our online shop. Each purchase helps fund supplies for students with special needs.</p>
+        <p data-copy="proposed">Each frame on this wall links to a real painting in the shop. Browse the full collection to see every piece, its price and availability.</p>
+        <div class="actions"><a class="button" href="https://www.paintitforward.co/category/all-products" target="_blank" rel="noopener noreferrer">Explore the artwork shop</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" aria-labelledby="ways-title">
+    <div class="sectionhead">
+      <div><p class="eyebrow">Get involved</p><h2 id="ways-title" data-copy="proposed">Pick up a brush.</h2></div>
+      <p data-copy="proposed">There's a place for your creativity here, whether you paint, organise, lead or support.</p>
+    </div>
+    <div class="paths">
+      <a class="path" href="#attend"><span class="swatch" style="background:var(--color-lime)" aria-hidden="true"></span><h3>Attend an event</h3><p data-copy="source">Join a volunteer painting session and make art for a good cause.</p><span class="go">See how to join</span></a>
+      <a class="path" href="#lead"><span class="swatch" style="background:var(--color-pink)" aria-hidden="true"></span><h3>Volunteer or lead</h3><p data-copy="source">Help with marketing, logistics or volunteer coordination.</p><span class="go">Explore roles</span></a>
+      <a class="path" href="#start"><span class="swatch" style="background:var(--color-orange)" aria-hidden="true"></span><h3>Start a chapter</h3><p data-copy="source">Bring art to young people where you live, with our guidance and resources.</p><span class="go">Become a founder</span></a>
+      <a class="path" href="#support"><span class="swatch" style="background:var(--color-leaf)" aria-hidden="true"></span><h3>Support the work</h3><p data-copy="source">Buy a painting or donate to fund educational supplies.</p><span class="go">Ways to support</span></a>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CHAPTERS ============ -->
+<div data-view="chapters" hidden>
+  <section class="pagehero soft" aria-labelledby="chapters-title">
+    <div class="container">
+      <p class="eyebrow">Chapters</p>
+      <h1 id="chapters-title" data-copy="proposed">Art travels further together.</h1>
+      <p class="lead" data-copy="proposed">Each chapter brings the Paint It Forward idea home: young people making art, connecting with each other and supporting special education where they live.</p>
+      <ul class="jump" aria-label="On this page">
+        <li><a href="#chapter-directory">Our chapters</a></li>
+        <li><a href="#network">Across the network</a></li>
+        <li><a href="#start-chapter">Start a chapter</a></li>
+      </ul>
+    </div>
+    <svg class="ring" viewBox="0 0 200 200" style="color:var(--color-leaf)" aria-hidden="true"><use href="#brushring"/></svg>
+  </section>
+
+  <section class="container" id="chapter-directory" aria-labelledby="dir-title">
+    <h2 id="dir-title" class="visually-hidden">Our chapters</h2>
+    <div class="directory">
+      <article class="dir-item dir--ng">
+        <div class="dir-art" aria-hidden="true"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid slice"><path d="M20 100 Q60 10 120 40 T190 20"/></svg><span>NG</span></div>
+        <div class="dir-body">
+          <span class="badge">Chapter</span>
+          <h3>Nigeria</h3>
+          <p data-copy="proposed">Part of the Paint It Forward chapter network. We're gathering this chapter's introduction, local contacts and updates, and will share them here soon.</p>
+          <a class="button" href="mailto:paintitforwardofficial@gmail.com?subject=Nigeria%20chapter%20enquiry">Ask about this chapter</a>
+          <p class="note">Or email paintitforwardofficial@gmail.com with "Nigeria chapter" in the subject.</p>
+          <p class="story"><b>Chapter stories</b> · Photos and updates from Nigeria will appear here.</p>
+        </div>
+      </article>
+      <article class="dir-item dir--ke">
+        <div class="dir-art" aria-hidden="true"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid slice"><path d="M10 30 Q80 110 140 60 T195 90"/></svg><span>KE</span></div>
+        <div class="dir-body">
+          <span class="badge">Chapter</span>
+          <h3>Kenya</h3>
+          <p data-copy="proposed">A community connected through art. Chapter introductions, contacts and local updates are on their way.</p>
+          <a class="button" href="mailto:paintitforwardofficial@gmail.com?subject=Kenya%20chapter%20enquiry">Ask about this chapter</a>
+          <p class="note">Or email paintitforwardofficial@gmail.com with "Kenya chapter" in the subject.</p>
+          <p class="story"><b>Chapter stories</b> · Photos and updates from Kenya will appear here.</p>
+        </div>
+      </article>
+      <article class="dir-item dir--sg">
+        <div class="dir-art" aria-hidden="true"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid slice"><path d="M30 20 Q100 60 60 100 T180 70"/></svg><span>SG</span></div>
+        <div class="dir-body">
+          <span class="badge badge--planning">First event in planning</span>
+          <h3>Singapore</h3>
+          <p data-copy="proposed">Our newest chapter is planning its first art event and exploring local collaborations. Follow along to hear first when plans are confirmed.</p>
+          <dl>
+            <dt>Instagram</dt><dd><a href="https://www.instagram.com/paintitforwardsingapore/" target="_blank" rel="noopener noreferrer">@paintitforwardsingapore</a></dd>
+            <dt>Email</dt><dd><a href="mailto:paintitforwardsingapore@gmail.com">paintitforwardsingapore@gmail.com</a></dd>
+          </dl>
+          <a class="button" href="https://www.instagram.com/paintitforwardsingapore/" target="_blank" rel="noopener noreferrer">Follow Singapore on Instagram</a>
+          <p class="story"><b>Chapter stories</b> · News from the first Singapore event will appear here.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="soft" id="network" aria-labelledby="network-title">
+    <div class="container">
+      <div class="sectionhead">
+        <div><p class="eyebrow">Across the network</p><h2 id="network-title" data-copy="proposed">One idea, many communities.</h2></div>
+        <p data-copy="proposed">Moments from Paint It Forward gatherings. Every chapter shapes its events around its own community.</p>
+      </div>
+      <div class="gallery">
+        <figure><img src="assets/community.jpg" width="1400" height="933" loading="lazy" alt="Community members gathered together outdoors"><figcaption>Gathering together outdoors.</figcaption></figure>
+        <figure><img src="assets/art-community.jpg" width="1800" height="1350" loading="lazy" alt="A group displaying colourful paintings together"><figcaption>Showing finished paintings.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="start-chapter" aria-labelledby="start-title">
+    <div class="founder">
+      <div>
+        <p class="eyebrow">Start a chapter</p>
+        <h2 id="start-title" data-copy="source">Become a chapter founder.</h2>
+        <p class="lead" data-copy="source">Bring art to young people in your area and lead a meaningful initiative, with guidance and resources from Paint It Forward.</p>
+        <ol class="steps" data-copy="source">
+          <li><div><b>Plan your first event</b><span>Choose a date and a place, such as a community centre, an outdoor space or a school room.</span></div></li>
+          <li><div><b>Gather materials</b><span>Collect donations, buy supplies, or ask us about shipped supplies if cost is a barrier.</span></div></li>
+          <li><div><b>Recruit volunteers</b><span>Invite friends and spread the word on social media or with posters.</span></div></li>
+          <li><div><b>Host the event</b><span>Make art together, take photos and count attendance so you can see your chapter grow.</span></div></li>
+          <li><div><b>Keep going</b><span>Host more events, grow your volunteer team, build your social media and run fundraisers.</span></div></li>
+        </ol>
+      </div>
+      <aside class="panel" aria-labelledby="req-title">
+        <h3 id="req-title">Who can apply</h3>
+        <ul class="ticks" data-copy="source">
+          <li>You are 13 or older</li>
+          <li>You live outside New York</li>
+          <li>You're interested in art</li>
+        </ul>
+        <h3>What founders do</h3>
+        <ul class="ticks" data-copy="source">
+          <li>Host relaxed art-making sessions with local volunteers</li>
+          <li>Sell art online or locally to support special education nearby</li>
+          <li>Run your chapter's own Instagram and TikTok</li>
+        </ul>
+        <div class="actions" style="margin-top:var(--space-6)">
+          <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLScHXr69DteFx9kDylNRCSB3pjhgktjIQ07zupLOsX9uiOfknw/viewform" target="_blank" rel="noopener noreferrer">Apply to start a chapter</a>
+          <a class="button button--secondary" href="https://www.paintitforward.co/general-4" target="_blank" rel="noopener noreferrer">Read the full guide</a>
+        </div>
+        <p class="note">Live in New York City? Join the leadership team instead — see <a href="#lead">volunteer and lead</a>.</p>
+      </aside>
+    </div>
+  </section>
+</div>
+
+<!-- ============ GET INVOLVED ============ -->
+<div data-view="get-involved" hidden>
+  <section class="pagehero soft" aria-labelledby="gi-title">
+    <div class="container">
+      <p class="eyebrow">Get involved</p>
+      <h1 id="gi-title" data-copy="proposed">Bring your creativity.</h1>
+      <p class="lead" data-copy="proposed">Paint, organise, lead or support. Choose the path that suits you.</p>
+      <ul class="jump" aria-label="Ways to get involved">
+        <li><a href="#attend">Attend an event</a></li>
+        <li><a href="#lead">Volunteer or lead</a></li>
+        <li><a href="#start">Start a chapter</a></li>
+        <li><a href="#support">Support the work</a></li>
+        <li><a href="#collaborate">Collaborate</a></li>
+      </ul>
+    </div>
+    <svg class="ring" viewBox="0 0 200 200" style="color:var(--color-leaf)" aria-hidden="true"><use href="#brushring"/></svg>
+  </section>
+
+  <section class="container">
+    <article class="way" id="attend" aria-labelledby="attend-title">
+      <div><span class="tag"><i style="--c:var(--color-lime)"></i>Attend</span><h2 id="attend-title" data-copy="proposed">Paint with us.</h2></div>
+      <div>
+        <p data-copy="source">Our volunteer painting sessions are relaxed, hands-on and open to young people aged 13 and up. In New York, sessions have been held in Riverside Park and in an indoor art studio. The paintings you make are sold to support local special education schools.</p>
+        <div class="actions">
+          <a class="button" href="https://www.paintitforward.co/event-list" target="_blank" rel="noopener noreferrer">See events</a>
+          <a class="button button--secondary" href="https://docs.google.com/forms/d/e/1FAIpQLScVVC0zRPn5qQ9GQUR6dbKhV6Uls9SVYgP8OOt-1-E8hf3jDg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Get event updates</a>
+        </div>
+        <p class="note" data-copy="proposed">Outside New York? Chapters plan their own events — <a href="#chapter-directory">find your chapter</a>. Singapore is planning its first event.</p>
+      </div>
+    </article>
+
+    <article class="way" id="lead" aria-labelledby="lead-title">
+      <div><span class="tag"><i style="--c:var(--color-pink)"></i>Volunteer and lead</span><h2 id="lead-title" data-copy="source">Join the leadership team.</h2></div>
+      <div>
+        <p data-copy="source">Leader applications are open for young people in the New York City metropolitan area who are 13 or older and can attend events or make art.</p>
+        <div class="roles" data-copy="source">
+          <div><b>Marketing Lead</b><span>Create Instagram and TikTok content and share our mission with high schoolers.</span></div>
+          <div><b>Logistics Lead</b><span>Plan and run events, and track finances and statistics.</span></div>
+          <div><b>Volunteer Coordinator</b><span>Recruit volunteers, promote the mission in person and track attendance.</span></div>
+        </div>
+        <div class="actions" style="margin-top:0">
+          <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSffqi2PGHi9mjcpsgzU9PMBcYWxhjS_6cU-saOIyOOWZUUVng/viewform?usp=header" target="_blank" rel="noopener noreferrer">Apply to lead</a>
+          <a class="button button--secondary" href="https://www.paintitforward.co/apply" target="_blank" rel="noopener noreferrer">Role details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="way" id="start" aria-labelledby="start2-title">
+      <div><span class="tag"><i style="--c:var(--color-orange)"></i>Start a chapter</span><h2 id="start2-title" data-copy="source">Bring it to your community.</h2></div>
+      <div>
+        <p data-copy="source">Live outside New York, aged 13 or older and interested in art? Start a Paint It Forward chapter: host art events with local volunteers, sell art to support special education nearby, and share your chapter's story online.</p>
+        <div class="actions">
+          <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLScHXr69DteFx9kDylNRCSB3pjhgktjIQ07zupLOsX9uiOfknw/viewform" target="_blank" rel="noopener noreferrer">Apply to start a chapter</a>
+          <a class="button button--secondary" href="#start-chapter">How chapters work</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="way" id="support" aria-labelledby="support-title">
+      <div><span class="tag"><i style="--c:var(--color-leaf)"></i>Support</span><h2 id="support-title" data-copy="source">Buy art. Fund supplies.</h2></div>
+      <div>
+        <p data-copy="source">Buy a painting from our online shop or make a donation to help fund educational supplies for students with special needs. Checkout and donations take place on our shop and donation pages.</p>
+        <div class="actions">
+          <a class="button" href="https://www.paintitforward.co/category/all-products" target="_blank" rel="noopener noreferrer">Explore the artwork shop</a>
+          <a class="button button--secondary" href="https://www.paintitforward.co/donate" target="_blank" rel="noopener noreferrer">Make a donation</a>
+        </div>
+        <p class="note" data-copy="source">Follow us on <a href="https://www.instagram.com/paintitforwardofficial/" target="_blank" rel="noopener noreferrer">Instagram</a> and <a href="https://www.tiktok.com/@paintitforwardofficial" target="_blank" rel="noopener noreferrer">TikTok</a> at @paintitforwardofficial.</p>
+      </div>
+    </article>
+
+    <article class="way" id="collaborate" aria-labelledby="collab-title">
+      <div><span class="tag"><i style="--c:var(--color-lime)"></i>Collaborate</span><h2 id="collab-title" data-copy="proposed">Partner with us.</h2></div>
+      <div>
+        <p data-copy="proposed">Schools, art businesses and community organisations can help us host sessions, share materials or display young artists' work. Tell us what you have in mind.</p>
+        <div class="actions">
+          <a class="button" href="mailto:paintitforwardofficial@gmail.com?subject=Collaboration%20enquiry">Email our team</a>
+        </div>
+        <p class="note">paintitforwardofficial@gmail.com</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="soft" aria-labelledby="faq-title">
+    <div class="container" style="max-width:56rem">
+      <p class="eyebrow">Questions</p>
+      <h2 id="faq-title" data-copy="proposed">Good to know.</h2>
+      <details open><summary>How old do I need to be?</summary><p data-copy="source">Volunteers, leaders and chapter founders generally need to be 13 or older.</p></details>
+      <details><summary>Where does the money go?</summary><p data-copy="source">Proceeds from artwork sales fund school and art supplies for students with special needs.</p></details>
+      <details><summary>I live in New York City. Can I start a chapter?</summary><p data-copy="source">Chapters are for communities outside New York. In the New York City area you can apply to join the leadership team instead.</p></details>
+      <details><summary>Where can I buy a painting?</summary><p data-copy="source">All available paintings are in our <a href="https://www.paintitforward.co/category/all-products" target="_blank" rel="noopener noreferrer">online artwork shop</a>, where checkout is handled.</p></details>
+    </div>
+  </section>
+</div>
+
+<section class="navy cta" aria-labelledby="cta-title">
+  <svg class="ring" viewBox="0 0 200 200" style="color:var(--color-green)" aria-hidden="true"><use href="#brushring"/></svg>
+  <div class="container cta-inner">
+    <h2 id="cta-title" data-copy="proposed">Make art. Make a difference.</h2>
+    <div class="actions" style="margin-top:0">
+      <a class="button button--light" href="#get-involved">Get involved</a>
+      <a class="button button--secondary" style="color:#fff;border-color:#fff" href="https://www.paintitforward.co/category/all-products" target="_blank" rel="noopener noreferrer">Explore the artwork</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#home"><img src="assets/logo.jpg" width="1800" height="1790" alt=""><span>Paint It Forward</span></a>
+        <p data-copy="source">A youth-led 501(c)(3) nonprofit based in New York, enriching young minds through the empowerment of art.</p>
+      </div>
+      <div><h2>Explore</h2><ul><li><a href="#impact">Our impact</a></li><li><a href="#chapters">Chapters</a></li><li><a href="#get-involved">Get involved</a></li><li><a href="https://www.paintitforward.co/event-list" target="_blank" rel="noopener noreferrer">Events</a></li></ul></div>
+      <div><h2>Support</h2><ul><li><a href="https://www.paintitforward.co/category/all-products" target="_blank" rel="noopener noreferrer">Artwork shop</a></li><li><a href="https://www.paintitforward.co/donate" target="_blank" rel="noopener noreferrer">Donate</a></li><li><a href="https://www.paintitforward.co/about-4" target="_blank" rel="noopener noreferrer">About us</a></li></ul></div>
+      <div><h2>Contact</h2><ul><li><a href="mailto:paintitforwardofficial@gmail.com">paintitforwardofficial@gmail.com</a></li><li><a href="https://www.instagram.com/paintitforwardofficial/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://www.tiktok.com/@paintitforwardofficial" target="_blank" rel="noopener noreferrer">TikTok</a></li></ul></div>
+    </div>
+    <div class="legal"><p>© Paint It Forward</p><p data-copy="source">Paint It Forward is a 501(c)(3) nonprofit based in New York, NY.</p></div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
